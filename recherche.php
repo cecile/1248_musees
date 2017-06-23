@@ -83,7 +83,8 @@ if(!empty($motCle)){
 }
 
     else{
-        echo "Vous n'avez pas entré de valeur correct";
+        
+         header('Location: index.php');
     }
 
 ?>
