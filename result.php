@@ -1,4 +1,6 @@
 <?php
+    
+    include 'header.php';
 
     $servername = "localhost";
     $username = "jcecile";
@@ -19,7 +21,7 @@
     include("geocode.php");
 
 ?>
-<head>
+<!--<head>
    <meta name="viewport" content="initial-scale=1.0, user-scalable=no"/>
         <style>
 			html, body {
@@ -35,13 +37,26 @@
 				
 			}
 		</style>
-</head>
+</head>-->
+       <div id="index-banner" class="parallax-container ">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <br><br>
+        <h1 class="header center teal-text one"><?= $musee['0']['nom_du_musee'] ?></h1>
+                
+        <br><br>
+
+      </div>
+    </div>
+    <div class="parallax">
+        <img src="img/background1.png" alt="Unsplashed background img 1">
+    </div>
+  </div>
+
+       
         <div>
             <div>
                 <div>
-                    <h2>
-                        <?= $musee['0']['nom_du_musee'] ?>
-                    </h2>
                     <p><img src='<?= $musee['0']['lien_image']?>' alt=" image de'<?= $musee['0']['nom_du_musee']?>'">
                     </p>
                     <h3>Adresse</h3>
@@ -71,233 +86,12 @@
                        /* echo "latitude: ".$localisation[0];
                         echo "longitude: ".$localisation[1];*/
     ?>
+                   <div id="map"></div>
                 </div>
              </div>
         </div>
-   <div id="map"></div>
+   
 
-<script>
-function myMap() {
-  var myCenter = new google.maps.LatLng(<?= $localisation[0] ?>, <?= $localisation[1]?>);
-  var mapCanvas = document.getElementById("map");
-  var mapOptions = {
-      center: myCenter, 
-      zoom: 15,
-      styles : [
-  {
-    "elementType": "geometry",
-    "stylers": [
-      {
-        "color": "#f5f5f5"
-      }
-    ]
-  },
-  {
-    "elementType": "labels.icon",
-    "stylers": [
-      {
-        "visibility": "off"
-      }
-    ]
-  },
-  {
-    "elementType": "labels.text.fill",
-    "stylers": [
-      {
-        "color": "#616161"
-      }
-    ]
-  },
-  {
-    "elementType": "labels.text.stroke",
-    "stylers": [
-      {
-        "color": "#f5f5f5"
-      }
-    ]
-  },
-  {
-    "featureType": "administrative.land_parcel",
-    "elementType": "labels.text.fill",
-    "stylers": [
-      {
-        "color": "#bdbdbd"
-      }
-    ]
-  },
-  {
-    "featureType": "poi",
-    "elementType": "geometry",
-    "stylers": [
-      {
-        "color": "#eeeeee"
-      }
-    ]
-  },
-  {
-    "featureType": "poi",
-    "elementType": "labels.text.fill",
-    "stylers": [
-      {
-        "color": "#757575"
-      }
-    ]
-  },
-  {
-    "featureType": "poi.park",
-    "elementType": "geometry",
-    "stylers": [
-      {
-        "color": "#e5e5e5"
-      }
-    ]
-  },
-  {
-    "featureType": "poi.park",
-    "elementType": "labels.text.fill",
-    "stylers": [
-      {
-        "color": "#9e9e9e"
-      }
-    ]
-  },
-  {
-    "featureType": "road",
-    "elementType": "geometry",
-    "stylers": [
-      {
-        "color": "#ffffff"
-      }
-    ]
-  },
-  {
-    "featureType": "road.arterial",
-    "elementType": "geometry.fill",
-    "stylers": [
-      {
-        "color": "#ffaa55"
-      }
-    ]
-  },
-  {
-    "featureType": "road.arterial",
-    "elementType": "labels.text.fill",
-    "stylers": [
-      {
-        "color": "#757575"
-      }
-    ]
-  },
-  {
-    "featureType": "road.highway",
-    "elementType": "geometry",
-    "stylers": [
-      {
-        "color": "#dadada"
-      }
-    ]
-  },
-  {
-    "featureType": "road.highway",
-    "elementType": "geometry.fill",
-    "stylers": [
-      {
-        "color": "#ff8000"
-      }
-    ]
-  },
-  {
-    "featureType": "road.highway",
-    "elementType": "labels.text.fill",
-    "stylers": [
-      {
-        "color": "#616161"
-      }
-    ]
-  },
-  {
-    "featureType": "road.local",
-    "elementType": "geometry.fill",
-    "stylers": [
-      {
-        "color": "#ffcd9b"
-      }
-    ]
-  },
-  {
-    "featureType": "road.local",
-    "elementType": "labels.text.fill",
-    "stylers": [
-      {
-        "color": "#9e9e9e"
-      }
-    ]
-  },
-  {
-    "featureType": "transit.line",
-    "elementType": "geometry",
-    "stylers": [
-      {
-        "color": "#e5e5e5"
-      }
-    ]
-  },
-  {
-    "featureType": "transit.station",
-    "elementType": "geometry",
-    "stylers": [
-      {
-        "color": "#eeeeee"
-      }
-    ]
-  },
-  {
-    "featureType": "water",
-    "elementType": "geometry",
-    "stylers": [
-      {
-        "color": "#c9c9c9"
-      }
-    ]
-  },
-  {
-    "featureType": "water",
-    "elementType": "geometry.fill",
-    "stylers": [
-      {
-        "color": "#49edf5"
-      }
-    ]
-  },
-  {
-    "featureType": "water",
-    "elementType": "geometry.stroke",
-    "stylers": [
-      {
-        "color": "#49edf5"
-      }
-    ]
-  },
-  {
-    "featureType": "water",
-    "elementType": "labels.text.fill",
-    "stylers": [
-      {
-        "color": "#9e9e9e"
-      }
-    ]
-  }
-]
-  };
-  var map = new google.maps.Map(mapCanvas, mapOptions);
-  var marker = new google.maps.Marker({position:myCenter});
-  marker.setMap(map);
-    
-}
-</script>
-
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDTbCZbT3cIAfDu1fzsvA6TIvs1Q6hisjk&callback=myMap"></script>
-<!--
-To use this code on your website, get a free API key from Google.
-Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
--->
+<?php
+    include 'footer.php';
+?>

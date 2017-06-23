@@ -1,5 +1,5 @@
-<?php 
-
+<?php
+    include 'header.php';
         $motCle = $_GET["search"];
 
 if(!empty($motCle)){
@@ -44,10 +44,28 @@ if(!empty($motCle)){
         catch(PDOException $e){
             $error["bdd"] =  "Error: " . $e->getMessage();
         }
+?>
 
-    
-    
-            echo "<h2> Il y a ".$totalEnregistrement." résultats.";
+<div id="index-banner" class="parallax-container ">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <br><br>
+        <h1 class="header center teal-text one">1248 Façons de découvrir</h1>
+        <div class="row center">
+          <h5 class="header col s12 light">Il y a <?= $totalEnregistrement ?> résultats.</h5>
+        </div>
+                
+        <br><br>
+
+      </div>
+    </div>
+    <div class="parallax">
+        <img src="img/background1.png" alt="Unsplashed background img 1">
+    </div>
+  </div>
+
+<?php 
+
             foreach ($musees as $musee): 
     ?>
             
@@ -87,4 +105,9 @@ if(!empty($motCle)){
          header('Location: index.php');
     }
 
+?>
+
+
+<?php
+    include 'footer.php';
 ?>

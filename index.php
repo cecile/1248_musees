@@ -1,20 +1,7 @@
-<!DOCTYPE html>
-<html lang="fr">
+<?php
 
-<head>
-
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>Les musées de France</title>
-</head>
-
-<body>
-   <?php
-
+    include 'header.php';
+        
         $servername = "localhost";
         $username = "jcecile";
         $password = "jcecile@2017";
@@ -33,11 +20,39 @@
         }
     ?>
             
-    
-    <form class="search" method="get" action="recherche.php?search=<?=$_GET["search"]?>">
-        <input type="text" name="search" required>
-        <button>Rechercher</button>
-    </form>
+    <div id="index-banner" class="parallax-container ">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <br><br>
+        <h1 class="header center teal-text one">1248 Façons de découvrir</h1>
+        <div class="row center">
+          <h5 class="header col s12 light">Bienvenue sur le répertoire des musées de France</h5>
+        </div>
+        
+        <div class="row center">
+            <div class="nav-wrapper">
+                <form class="search" method="get" action="recherche.php?search=<?=$_GET["search"]?>">
+                    <div class="input-field">
+                        <input id="search" type="search" placeholder="Veuillez entrer ici votre recherche" type="text" name="search" required>
+                        <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+                        <i class="material-icons cross">close</i>
+                    </div>
+                </form>
+            </div>
+        </div>
+        
+        <br><br>
+
+      </div>
+    </div>
+    <div class="parallax">
+        <img src="img/background1.png" alt="Unsplashed background img 1">
+    </div>
+  </div>
+   
+<div class="container result">
+    <div class="section">
+        <div class="row">
     
     <?php
     
@@ -58,26 +73,69 @@
             
 
         
-         <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <div class="post-preview">
-                    <h2 class="post-title">
+         
+              <div class="col s12 m4 l4 xl4">
+                    <h2 class="hc">
                         <?= $musee['nom_du_musee'] ?>
                     </h2>
-                    <h3 class="post-subtitle">
-                        <?= $musee['cp'].' '.$musee['ville'] ?>
-                    </h3>
-                    <p><img src='<?= $musee['lien_image']?>' alt=" image de'<?= $musee['nom_du_musee']?>'"></p>
-                    <a class="waves-effect waves-light btn" href="result.php?id=<?=$musee['id']?>">En savoir plus</a>
+                    <div class="card horizontal">
+                      <div class="card-stacked hoverable">
+                        <div class="card-content">
+                            <p><?= $musee['cp'].' '.$musee['ville'] ?></p>
+                            <p><img src='<?= $musee['lien_image']?>' alt=" image de'<?= $musee['nom_du_musee']?>'"></p>
+                        </div>
+                        <div class="card-action">  
+                            <a href="result.php?id=<?=$musee['id']?>">En savoir plus</a>
+                        </div>
+                    </div>
                 </div>
-             </div>
-        </div>
-        <hr>
-        
+            </div>
+ 
     <?php endforeach;
     ?>
-    
+        </div>
+    </div>
+  </div>
 
 
-</body>
-</html>
+  <div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+          <h5 class="header col s12 light">1248 manières de se cultiver</h5>
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img src="img/background2.png" alt="Unsplashed background img 2"></div>
+  </div>
+
+  <div class="container">
+    <div class="section">
+
+      <div class="row">
+        <div class="col s12 center">
+          <h3><i class="mdi-content-send brown-text"></i></h3>
+          <h4>Musées de France</h4>
+          <p class="left-align light">Musees-de-France.fr référence, entre-autres, les Musées labellisés "Musée de France". C'est à dire les musées français dans la perspective d'un grand service public : les musées nationaux, les musées de l'État ayant un statut établi par décret, les anciens musées classés, ainsi que ceux qui sont reconnus comme musées de France par le ministre de la Culture.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+          <h5 class="header col s12 light">1248 idées de sorties</h5>
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img src="img/background3.png" alt="Musées Pompidou à Metz"></div>
+  </div>
+
+<?php
+
+    include 'footer.php';
+?>
