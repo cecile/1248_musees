@@ -35,7 +35,7 @@
             
     
     <form class="search" method="get" action="recherche.php?search=<?=$_GET["search"]?>">
-        <input type="text" name="search">
+        <input type="text" name="search" required>
         <button>Rechercher</button>
     </form>
     
