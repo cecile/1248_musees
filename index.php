@@ -75,12 +75,13 @@
         
          
               <div class="col s12 m4 l4 xl4">
+                   <div class="card horizontal">
+                      <div class="card-stacked hoverable">
+                        <div class="card-content">
                     <h2 class="hc">
                         <?= $musee['nom_du_musee'] ?>
                     </h2>
-                    <div class="card horizontal">
-                      <div class="card-stacked hoverable">
-                        <div class="card-content">
+                    
                             <p><?= $musee['cp'].' '.$musee['ville'] ?></p>
                             <p><img src='<?= $musee['lien_image']?>' alt=" image de'<?= $musee['nom_du_musee']?>'"></p>
                         </div>

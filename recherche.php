@@ -72,32 +72,38 @@ if(!empty($motCle)){
 
         
          <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <div class="post-preview">
-                    <h2 class="post-title">
+                <div class="col s12 m4 l4 xl4">
+                    <h2 class="hc">
                         <?= $musee['nom_du_musee'] ?>
                     </h2>
-                    <h3 class="post-subtitle">
+                    <h3>
                         <?= $musee['cp'].' '.$musee['ville'] ?>
                     </h3>
                     <p><img src='<?= $musee['lien_image']?>' alt=" image de'<?= $musee['nom_du_musee']?>'"></p>
                     <a class="waves-effect waves-light btn" href="result.php?id=<?=$musee['id']?>">En savoir plus</a>
                 </div>
              </div>
-        </div>
-        <hr>
         
-    <?php endforeach;
+    <?php endforeach; ?>
+    
+     <ul class="pagination">
+     
+     <?php
     
         for($i=1; $i<=$nbrPage; $i++){
             if($i == $cPage){
-            echo "$i / ";
+            echo "<li class='active'>$i</li>";
             }
             else{
-            echo " <a href=\"recherche.php?search=$motCle&p=$i\">$i</a> /";
+            echo " <li class='waves-effect'><a href=\"recherche.php?search=$motCle&p=$i\">$i</a></li>";
         }
 
     }
+    ?>
+    
+    </ul>
+    
+    <?php
 }
 
     else{
