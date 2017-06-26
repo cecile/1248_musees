@@ -126,6 +126,15 @@ footer.page-footer {
     width: 40%;
 }
 
+.flex2{
+ width: 40%;   
+}
+.flexresult{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between
+}
 .lieu {
     font-size: 1.3rem;
 }
@@ -134,6 +143,7 @@ footer.page-footer {
 .pagination li.active {
     background-color: #ff5722;
     color: white;
+    font-weight: 600;
 }
 
 .go-top {
@@ -158,10 +168,15 @@ footer.page-footer {
 
 }
 
+body > div.container.flexresult > div:nth-child(2) > h3{
+    margin-top: 30%;
+}
+
 #map {
     height: 20em;
     width: 40em;
     border-radius: 70px 70px 70px 70px  ;
+    margin: auto;
 }
 
     color: #ff5722;

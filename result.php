@@ -54,9 +54,9 @@
   </div>
 
        
-        <div class="container">
-            <div class="row">
-                   <div class="col s12 m12 l6 xl6">
+        <div class="container flexresult">
+                    <div class="flex2">
+            
                     <p><img src='<?= $musee['0']['lien_image']?>' alt=" image de'<?= $musee['0']['nom_du_musee']?>'">
                     </p>
                     <h3>Adresse</h3>
@@ -68,26 +68,26 @@
                     </p>
                     </div>
                     
-                    <div>
+                    <div class="flex2">
                     <h3>Site Web</h3>
                     <a href='http://<?= $musee['0']['site_web'] ?>' target="_blank"><?= $musee['0']['site_web'] ?></a>
                     </div>
                     
-                    <div>
+                    <div class="flex2">
                     <h3>Téléphone</h3>
                     <p> 
                         <?= $musee['0']['telephone'] ?>
                     </p>
                     </div>
                     
-                    <div>
+                    <div class="flex2">
                     <h3>Période d'ouverture</h3>                      
                     <p>
                         <?= $musee['0']['periode_ouverture'] ?>
                     </p>
                     </div>
                     
-                    <div>
+                    <div class="flex2">
                     <h3>Période de fermeture</h3>
                     <p>
                         <?= $musee['0']['fermeture_annuelle'] ?>
@@ -99,9 +99,10 @@
                        /* echo "latitude: ".$localisation[0];
                         echo "longitude: ".$localisation[1];*/
     ?>
-                   <div id="map"></div>
-               
-             </div>
+            </div>
+            
+            <div class="row">
+             <div id="map" class="col s12 m12 l8 xl8 center"></div>
         </div>
    
 
