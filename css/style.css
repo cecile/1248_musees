@@ -53,6 +53,11 @@ p {
 
 }
 
+.image{
+    margin-top: 14%;
+    width: 69%;
+}
+
 @media only screen and (max-width : 600px) {
   #index-banner .section {
     top: 0;
