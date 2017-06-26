@@ -64,7 +64,7 @@ if(!empty($motCle)){
     </div>
   </div>
   <div class="container">
-        <div class="row">
+        <div class="flex">
     
 <?php 
 
@@ -73,8 +73,8 @@ if(!empty($motCle)){
             
 
         
-       <div class="col s12 m4 l4 xl4">
-                   <div class="card horizontal">
+      
+                   <div class="card horizontal flexcard">
                       <div class="card-stacked hoverable">
                         <div class="card-content">
                     <h2 class="hc">
@@ -89,14 +89,13 @@ if(!empty($motCle)){
                         </div>
                     </div>
                 </div>
-            </div>
+            
         
     <?php endforeach; ?>
     
      </div>
-</div>
      <ul class="pagination">
-            <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+            
      <?php
     
         for($i=1; $i<=$nbrPage; $i++){
@@ -109,9 +108,11 @@ if(!empty($motCle)){
 
     }
     ?>
-     <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+    
     
     </ul>
+</div>
+     
     
     <?php
 }

@@ -112,11 +112,18 @@ footer.page-footer {
 
 .hc{
     color: #212121;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
-.nomMusee {
-    font-size: 1.5rem;
+.flex{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.flexcard{
+    width: 40%;
 }
 
 .lieu {
@@ -124,7 +131,10 @@ footer.page-footer {
 }
 
 
-
+.pagination li.active {
+    background-color: #ff5722;
+    color: white;
+}
 
 .go-top {
 	position: fixed;
