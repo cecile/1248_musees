@@ -4,15 +4,18 @@
         <div class="col l6 s12">
           <h5 class="deep-orange-text">Venez musarder!</h5>
           <p class="grey-text text-lighten-4">La France offre la plus grande diversité de musées au monde !  La peinture, la sculpture, la photographie, l’art contemporain, les sciences… et bien d’autres thématiques sont abordées dans plus de mille musées français. Difficile de faire son choix parmi une telle offre culturelle ! Pour ne pas passer à côté de l’essentiel nous les avons tous recensés!</p>
+            <div class="col l6 s12">
+                <img src="img/logoMuseeDeFrance.png"/>
+            </div>
 
 
         </div>
-       <a href="#" class="go-top">Go Top</a>
+       <a href="#" class="go-top">Top</a>
       </div>
     </div>
-    <div class="footer-copyright">
+    <div class="footer-copyright end">
       <div class="container">
-      Made by <a class="deep-orange-text accent-4" href="http://materializecss.com">Alex, Cécile, Marine &amp; Samuel 2017</a>
+      Made by <a class="deep-orange-text accent-4" href="http://materializecss.com">Alex, Cécile, Marine &amp; Samuel, 2017</a>
       </div>
     </div>
   </footer>

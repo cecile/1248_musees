@@ -43,12 +43,29 @@ p {
   #index-banner .section {
     top: 10%;
   }
+
+    #index-banner{
+        min-height: 400px;
+    }
+    #search{
+        padding-top: 5px;
+    }
+
 }
 
 @media only screen and (max-width : 600px) {
   #index-banner .section {
     top: 0;
   }
+
+    #index-banner{
+        min-height: 400px;
+    }
+    
+    #search{
+        padding-top: 5px;
+    }
+
 }
 
 .icon-block {
@@ -73,7 +90,11 @@ footer.page-footer {
 }
 
 .footer{
+
     background-color:#9e9e9e; 
+
+    background-color:#505050; 
+
 }
 
 .burger{
@@ -86,15 +107,24 @@ footer.page-footer {
 
 .hc{
     color: #212121;
+    font-size: 2rem;
 }
+
+
+
 
 .go-top {
 	position: fixed;
 	bottom: 0;
 	right: 0;
 	text-decoration: none;
+
 	color: red;
 	background-color: blue;
+
+	color: white;
+	background-color: #ff5722;
+
 	font-size: 12px;
 	padding: 1em;
 	display: none;
@@ -102,6 +132,7 @@ footer.page-footer {
 
 .go-top:hover {
 	background-color: rgba(0, 0, 0, 0.6);
+
 }
 
 #map {
@@ -109,3 +140,28 @@ footer.page-footer {
     width: 40em;
     border-radius: 70px 70px 70px 70px  ;
 }
+
+    color: #ff5722;
+}
+
+h5 {
+    font-size: 32px;
+}
+
+.page-footer .footer-copyright {
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(51, 51, 51, 1);
+    font-weight: bold;
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 568px) {
+    #index-banner{
+            min-height: 470px;
+    }
+    
+    #search{
+        padding-top: 5px;
+    }
+    
+}
+

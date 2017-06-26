@@ -22,11 +22,10 @@
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
-
 <body>
   <nav class="grey darken-4" role="navigation">
     <div class="nav-wrapper container">
-      <a id="logo-container" href="index.php" class="brand-logo logo right"><img src ="img/logo.png" alt="Ceci est un logo"> </a>
+      <a id="logo-container"  class="brand-logo logo right"><img src ="img/logo.png" alt="Ceci est un logo"> </a>
      
 
       <ul id="nav-mobile" class="side-nav">
