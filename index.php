@@ -75,7 +75,7 @@
         
          
               <div class="col s12 m4 l4 xl4">
-                   <div class="card horizontal">
+                   <div class="card horizontal hap">
                       <div class="card-stacked hoverable">
                         <div class="card-content">
                     <h2 class="hc">
