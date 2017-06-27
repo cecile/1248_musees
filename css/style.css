@@ -301,6 +301,6 @@ h5 {
     height: 20em;
     width: 40em;
     border-radius: 70px 70px 70px 70px  ;
-    margin: auto;
+    /*margin: auto;*/
     margin-bottom: 50px;
 }
