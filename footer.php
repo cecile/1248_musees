@@ -25,7 +25,7 @@
   <script src="js/init.js"></script>
 <script>
 function myMap() {
-  var myCenter = new google.maps.LatLng(<?= $localisation[0] ?>, <?= $localisation[1]?>);
+  var myCenter = new google.maps.LatLng(<?= $localisation["results"][0]["geometry"]["location"]["lat"] ?>, <?=  $localisation["results"][0]["geometry"]["location"]["lng"]?>);
   var mapCanvas = document.getElementById("map");
   var mapOptions = {
       center: myCenter, 
