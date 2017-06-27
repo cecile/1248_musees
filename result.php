@@ -104,9 +104,10 @@
            </div>
         </div>
             
-          
+          <div class="container">
+             <h3 class="p200">Localiser le musée</h3>
              <div id="map"></div>
-        
+          </div>
    
 
 <?php

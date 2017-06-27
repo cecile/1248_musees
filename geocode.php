@@ -4,7 +4,7 @@ function geocode($adress){
     
     
 $ad = urlencode($adress);
-$apiKey = "AIzaSyDTbCZbT3cIAfDu1fzsvA6TIvs1Q6hisjk";
+$apiKey = "AIzaSyAdx_aAdl1Tj-rBL-ItMqxvyarw_omJEsk";
     
 $url = "https://maps.googleapis.com/maps/api/geocode/json?sensor=false&address=".$ad."&key=".$apiKey;
 
