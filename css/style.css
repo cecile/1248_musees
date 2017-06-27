@@ -171,6 +171,18 @@ h5 {
         padding-top: 5px;
     }
     
+    .hop{
+            height: 52vh;
+    }
+    
+    .hap{
+            height: 72vh;
+    }
+    
+    h1 {
+    font-size: 3.2rem;
+        }
+    
     
 }
 
@@ -187,6 +199,17 @@ h5 {
         padding-top: 5px;
     }
 
+     .hop{
+            height: 52vh;
+    }
+    
+    .hap{
+            height: 72vh;
+    }
+    
+    h1 {
+    font-size: 3.2rem;
+        }
 }
 
 @media only screen and (max-width : 992px) {
@@ -204,5 +227,19 @@ h5 {
     #search{
         padding-top: 5px;
     }
-   
+    .hop{
+            height: 63vh;
+    }
+    
+    .hap{
+            height: 72vh;
+    }
+    
+    #index-banner {
+    min-height: 500px;
+    }
+    
+    h1 {
+    font-size: 3.2rem;
+        }
 }
