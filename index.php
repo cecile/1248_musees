@@ -55,17 +55,39 @@
         <div class="row">
     
     <?php
-    
-        $rand_keys = array_rand($musees, 3);
-          
-          try{
-              $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password, array(PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8'));
-             $stmt = $conn->prepare("SELECT * FROM musee WHERE id=$rand_keys[0] OR id=$rand_keys[1] OR id=$rand_keys[2]"); 
-             $stmt->execute();
-             $musees = $stmt->fetchAll();
-          }
-           catch(PDOException $e){
-            $error["bdd"] =  "Error: " . $e->getMessage();
+
+        $ip = $_SERVER['REMOTE_ADDR']; // Recuperation de l'IP du visiteur
+        $query = @unserialize(file_get_contents('http://ip-api.com/php/'.$ip)); //connection au serveur de ip-api.com et recuperation des données
+        if($query && $query['status'] == 'success') {
+            $userCity = $query['city'];
+             try{
+                $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password, array(PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8'));
+                 $stmt = $conn->prepare("SELECT * FROM musee WHERE ville LIKE :userCity LIMIT 3"); 
+                 $stmt->bindParam(':userCity', $userCity);
+                 $stmt->execute();
+                 $musees = $stmt->fetchAll();
+              }
+               catch(PDOException $e){
+                $error["bdd"] =  "Error: " . $e->getMessage();
+            }
+        
+        echo "<div class=container><h3>Les musées proches de vous...</h3></div>";
+            
+        } else{
+
+            $rand_keys = array_rand($musees, 3);
+
+              try{
+                  $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password, array(PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8'));
+                 $stmt = $conn->prepare("SELECT * FROM musee WHERE id=$rand_keys[0] OR id=$rand_keys[1] OR id=$rand_keys[2]"); 
+                 $stmt->execute();
+                 $musees = $stmt->fetchAll();
+              }
+               catch(PDOException $e){
+                $error["bdd"] =  "Error: " . $e->getMessage();
+            }
+            
+             echo "<div class=container><h3>Quelques musées...</h3></div>";
         }
           
         foreach ($musees as $musee): 
@@ -92,7 +114,7 @@
                 </div>
             </div>
  
-    <?php endforeach;
+    <?php endforeach; 
     ?>
         </div>
     </div>

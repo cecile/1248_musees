@@ -18,11 +18,11 @@
     </div>
   </footer>
 
-
   <!--  Scripts-->
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
+  <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearchLite.min.js"></script>
 <script>
 function myMap() {
   var myCenter = new google.maps.LatLng(<?= $localisation["results"][0]["geometry"]["location"]["lat"] ?>, <?=  $localisation["results"][0]["geometry"]["location"]["lng"]?>);
@@ -261,7 +261,7 @@ function myMap() {
 				
 				$('html, body').animate({scrollTop: 0}, 300);
 			})
-		});
+		}); 
     </script>
   </body>
 </html>
