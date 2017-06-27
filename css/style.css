@@ -135,12 +135,7 @@ footer.page-footer {
 
 
 
-#map {
-    height: 20em;
-    width: 40em;
-    border-radius: 70px 70px 70px 70px  ;
-    margin: auto;
-}
+
 
     color: #ff5722;
 }
@@ -227,6 +222,7 @@ h5 {
     #search{
         padding-top: 5px;
     }
+<<<<<<< HEAD
     .hop{
             height: 63vh;
     }
@@ -242,4 +238,110 @@ h5 {
     h1 {
     font-size: 3.2rem;
         }
+=======
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#map {
+    height: 20em;
+    width: 40em;
+    border-radius: 70px 70px 70px 70px  ;
+    /*margin: auto;*/
+    margin-bottom: 50px;
+>>>>>>> 5f3b6aee44900910851fb1ecc6c7c54ef5b6b79d
 }
