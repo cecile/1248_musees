@@ -26,7 +26,7 @@
   <nav class="grey darken-4" role="navigation">
     <div class="nav-wrapper container">
       <a id="logo-container"  class="brand-logo logo right"><img src ="img/logo.png" alt="Ceci est un logo"> </a>
-     <a href="index.php">Accueil</a>
+     <a class="accueil" href="index.php">Accueil</a>
 
       <ul id="nav-mobile" class="side-nav">
         <li><a href="#">Navbar Link</a></li>

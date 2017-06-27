@@ -14,11 +14,22 @@ nav .brand-logo {
     font-family: 'arial';
     font-weight: bold;
     font-size: 3em;
-    
+    }
+
+.hop{
+        height: 37vh;
 }
 
+.hap{
+   height: 40vh; 
+}
 p {
   line-height: 2rem;
+}
+
+a:hover {
+    font-weight: bolder;
+    color:darkgray;
 }
 
 .button-collapse {
@@ -88,15 +99,7 @@ footer.page-footer {
 
 
 
-.flex2{
- width: 40%;   
-}
-.flexresult{
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between
-}
+
 .lieu {
     font-size: 1.3rem;
 }
@@ -130,9 +133,7 @@ footer.page-footer {
 
 }
 
-body > div.container.flexresult > div:nth-child(2) > h3{
-    margin-top: 30%;
-}
+
 
 #map {
     height: 20em;
@@ -146,6 +147,13 @@ body > div.container.flexresult > div:nth-child(2) > h3{
 
 h5 {
     font-size: 32px;
+}
+
+.p200 {
+    font-size: 2rem;
+    font-weight: 200;
+    line-height: 110%;
+    margin: 1.46rem 0 1.168rem 0;
 }
 
 .page-footer .footer-copyright {
@@ -163,11 +171,7 @@ h5 {
         padding-top: 5px;
     }
     
-    .flexresult{
-        display: table-row-group;
-    }
-    .flex2{
-        margin:2%;
+    
 }
 
 @media only screen and (max-width : 600px) {
@@ -182,11 +186,7 @@ h5 {
     #search{
         padding-top: 5px;
     }
-.flexresult{
-        display: table-row-group;
-    }
-    .flex2{
-        margin:2%;
+
 }
 
 @media only screen and (max-width : 992px) {
@@ -204,10 +204,5 @@ h5 {
     #search{
         padding-top: 5px;
     }
-.flexresult{
-        display: table-row-group;
-    }
-    .flex2{
-        margin:2%;
-    }    
+   
 }

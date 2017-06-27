@@ -54,12 +54,13 @@
   </div>
 
        
-        <div class="container flexresult">
+        <div class="container">
+                   <div class="row">
                     <div class="flex2">
             
                     <p><img src='<?= $musee['0']['lien_image']?>' alt=" image de'<?= $musee['0']['nom_du_musee']?>'">
                     </p>
-                    <h3>Adresse</h3>
+                    <h3 class="p200">Adresse</h3>
                     <p>
                         <?= $musee['0']['adresse'] ?>
                     </p>
@@ -69,26 +70,26 @@
                     </div>
                     
                     <div class="flex2">
-                    <h3>Site Web</h3>
+                    <h3 class="p200">Site Web</h3>
                     <a href='http://<?= $musee['0']['site_web'] ?>' target="_blank"><?= $musee['0']['site_web'] ?></a>
                     </div>
                     
                     <div class="flex2">
-                    <h3>Téléphone</h3>
+                    <h3 class="p200">Téléphone</h3>
                     <p> 
                         <?= $musee['0']['telephone'] ?>
                     </p>
                     </div>
                     
                     <div class="flex2">
-                    <h3>Période d'ouverture</h3>                      
+                    <h3 class="p200">Période d'ouverture</h3>                      
                     <p>
                         <?= $musee['0']['periode_ouverture'] ?>
                     </p>
                     </div>
                     
                     <div class="flex2">
-                    <h3>Période de fermeture</h3>
+                    <h3 class="p200">Période de fermeture</h3>
                     <p>
                         <?= $musee['0']['fermeture_annuelle'] ?>
                     </p>
@@ -99,7 +100,8 @@
                        /* echo "latitude: ".$localisation[0];
                         echo "longitude: ".$localisation[1];*/
     ?>
-            </div>
+                        
+           </div>
             
           
              <div id="map"></div>
