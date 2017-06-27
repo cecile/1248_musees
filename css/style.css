@@ -135,12 +135,7 @@ footer.page-footer {
 
 
 
-#map {
-    height: 20em;
-    width: 40em;
-    border-radius: 70px 70px 70px 70px  ;
-    margin: auto;
-}
+
 
     color: #ff5722;
 }
@@ -205,4 +200,107 @@ h5 {
         padding-top: 5px;
     }
    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#map {
+    height: 20em;
+    width: 40em;
+    border-radius: 70px 70px 70px 70px  ;
+    margin: auto;
+    margin-bottom: 50px;
 }
