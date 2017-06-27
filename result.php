@@ -101,9 +101,9 @@
     ?>
             </div>
             
-            <div class="row">
-             <div id="map" class="col s12 m12 l8 xl8 center"></div>
-        </div>
+          
+             <div id="map"></div>
+        
    
 
 <?php

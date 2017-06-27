@@ -6,7 +6,7 @@
           <p class="grey-text text-lighten-4">La France offre la plus grande diversité de musées au monde !  La peinture, la sculpture, la photographie, l’art contemporain, les sciences… et bien d’autres thématiques sont abordées dans plus de mille musées français. Difficile de faire son choix parmi une telle offre culturelle ! Pour ne pas passer à côté de l’essentiel nous les avons tous recensés!</p>
         </div>
             <div class="col l4 s12 offset-l2">
-                <img class="image" src="img/logoMuseeDeFrance.png"/>
+                <a href ="http://www.culturecommunication.gouv.fr/Aides-demarches/Protections-labels-et-appellations/Appellation-Musee-de-France" target="_blank"><img class="image" src="img/logoMuseeDeFrance.png"/></a>
             </div>
        <a href="#" class="go-top">Top</a>
       </div>
