@@ -24,7 +24,7 @@
     <div class="section no-pad-bot">
       <div class="container">
         <br><br>
-        <h1 class="header center teal-text one">1248 Façons de découvrir</h1>
+        <h1 class="header center teal-text one"><span class="timer count-title count-number" data-to="1248" data-speed="1200"></span> Façons de découvrir</h1>
         <div class="row center">
           <h5 class="header col s12 light">Bienvenue sur le répertoire des musées de France</h5>
         </div>
@@ -139,7 +139,7 @@
         <div class="col s12 center">
           <h3><i class="mdi-content-send brown-text"></i></h3>
           <h4>Musées de France</h4>
-          <p class="left-align light">Musees-de-France.fr référence, entre-autres, les Musées labellisés "Musée de France". C'est à dire les musées français dans la perspective d'un grand service public : les musées nationaux, les musées de l'État ayant un statut établi par décret, les anciens musées classés, ainsi que ceux qui sont reconnus comme musées de France par le ministre de la Culture.</p>
+          <p class="left-align light">Notre site référence, entre-autres, les Musées labellisés "Musée de France". C'est à dire les musées français dans la perspective d'un grand service public : les musées nationaux, les musées de l'État ayant un statut établi par décret, les anciens musées classés, ainsi que ceux qui sont reconnus comme musées de France par le ministre de la Culture.</p>
         </div>
       </div>
 

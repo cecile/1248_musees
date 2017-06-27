@@ -50,7 +50,7 @@ if(!empty($motCle)){
     <div class="section no-pad-bot">
       <div class="container">
         <br><br>
-        <h1 class="header center teal-text one">1248 Façons de découvrir</h1>
+        <h1 class="header center teal-text one"><span class="timer count-title count-number" data-to="1248" data-speed="1200"></span> Façons de découvrir</h1>
         <div class="row center">
           <h5 class="header col s12 light">Il y a <?= $totalEnregistrement ?> résultats.</h5>
         </div>
