@@ -136,6 +136,7 @@ h5 {
     font-weight: 200;
     line-height: 110%;
     margin: 1.46rem 0 1.168rem 0;
+    text-align: left;
 }
 
 .page-footer .footer-copyright {
@@ -262,3 +263,6 @@ h5 {
 }
 
 
+h3{
+    text-align: center;
+}
