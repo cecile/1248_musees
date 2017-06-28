@@ -33,8 +33,8 @@
             <div class="nav-wrapper">
                 <form class="search" method="get" action="recherche.php?search=<?=$_GET["search"]?>">
                     <div class="input-field">
-                        <input id="search" type="search" placeholder="Veuillez entrer ici votre recherche" type="text" name="search" required>
-                        <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+                        <input id="search" class="villes" type="search" placeholder="Veuillez entrer ici votre recherche" type="text" name="search" required>
+                        <label class="label-icon" for="villes"><i class="material-icons">search</i></label>
                         <i class="material-icons cross">close</i>
                     </div>
                 </form>

@@ -58,6 +58,7 @@ a:hover {
 .icon-block {
   padding: 0 15px;
 }
+}
 .icon-block .material-icons {
   font-size: inherit;
 }
@@ -222,7 +223,7 @@ h5 {
     #search{
         padding-top: 5px;
     }
-<<<<<<< HEAD
+
     .hop{
             height: 63vh;
     }
@@ -238,14 +239,24 @@ h5 {
     h1 {
     font-size: 3.2rem;
         }
-=======
+
    
 }
 
 
 
 
+/**********************autocompletion*********************************************/
 
+#ui-id-1{
+    color: white;
+    font-size: 20px;
+    background-color: rgba(192, 192, 192, 0.5);
+    padding-left: 1rem;
+    width: 20%;
+    height: 30vh;
+    overflow: hidden;
+}
 
 
 
@@ -343,5 +354,5 @@ h5 {
     border-radius: 70px 70px 70px 70px  ;
     /*margin: auto;*/
     margin-bottom: 50px;
->>>>>>> 5f3b6aee44900910851fb1ecc6c7c54ef5b6b79d
+
 }

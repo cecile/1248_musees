@@ -13,7 +13,7 @@
     </div>
     <div class="footer-copyright end">
       <div class="container">
-      Made by <a class="deep-orange-text accent-4" href="http://materializecss.com">Alex, Cécile, Marine &amp; Samuel, 2017</a>
+          Made by <a class="deep-orange-text accent-4" href="https://www.behance.net/alexia-magnaldi" target="_blank">Alex,</a> <a class="deep-orange-text accent-4" href="https://www.behance.net/cecilejobert" target="_blank">Cécile,</a> <a class="deep-orange-text accent-4" href="http://www.marinechristiany.fr" target="_blank">Marine &amp; </a>  <a class="deep-orange-text accent-4" href="https://www.behance.net/vingtquatre" target="_blank">Samuel, 2017</a>
       </div>
     </div>
   </footer>
@@ -24,6 +24,9 @@
   <script src="js/init.js"></script>
   <script src="js/compteur.js"></script>
   <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearchLite.min.js"></script>
+  <script src="//code.jquery.com/jquery-1.11.3.js"></script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+  <script src="js/auto.js"></script>
 <script>
 function myMap() {
   var myCenter = new google.maps.LatLng(<?= $localisation["results"][0]["geometry"]["location"]["lat"] ?>, <?=  $localisation["results"][0]["geometry"]["location"]["lng"]?>);
@@ -31,6 +34,7 @@ function myMap() {
   var mapOptions = {
       center: myCenter, 
       zoom: 15,
+      scrollwheel: false,
       styles : [
   {
     "elementType": "geometry",
