@@ -2,7 +2,7 @@ h1,
 .header,
 .one
 {
-    color: white !important;
+  color: white !important;
 }
 
 nav ul a,
@@ -11,25 +11,25 @@ nav .brand-logo {
 }
 
 .logo{
-    font-family: 'arial';
-    font-weight: bold;
-    font-size: 3em;
-    }
+  font-family: 'arial';
+  font-weight: bold;
+  font-size: 3em;
+}
 
 .hop{
-        height: 37vh;
+  height: 37vh;
 }
 
 .hap{
-   height: 40vh; 
+  height: 40vh; 
 }
 p {
   line-height: 2rem;
 }
 
 a:hover {
-    font-weight: bolder;
-    color:darkgray;
+  font-weight: bolder;
+  color:darkgray;
 }
 
 .button-collapse {
@@ -42,18 +42,14 @@ a:hover {
   height: auto;
   color: rgba(255,255,255,.9);
 }
-  .parallax-container .section {
-    width: 100%;
-  }
-
-
-
-.image{
-    margin-top: 14%;
-    width: 69%;
+.parallax-container .section {
+  width: 100%;
 }
 
-
+.image{
+  margin-top: 14%;
+  width: 69%;
+}
 
 .icon-block {
   padding: 0 15px;
@@ -67,118 +63,122 @@ footer.page-footer {
 }
 
 #search{
-    background-color: #f5f5f5;
-    border-bottom: none;
-    box-shadow: none;
+  background-color: #f5f5f5;
+  border-bottom: none;
+  box-shadow: none;
 }
 
 .cross{
-    top: 17% !important;
+  top: 17% !important;
 }
 
 .footer{
 
-    background-color:#9e9e9e; 
+  background-color:#9e9e9e; 
 
-    background-color:#505050; 
+  background-color:#505050; 
 
 }
 
 .burger{
-    color: white;
+  color: white;
 }
 
 .logo{
-        margin-top: 1%;
+  margin-top: 1%;
 }
 
 .hc{
-    color: #212121;
-    font-size: 1.5rem;
+  color: #212121;
+  font-size: 1.5rem;
 }
 
-
-
-
 .lieu {
-    font-size: 1.3rem;
+  font-size: 1.3rem;
 }
 
 
 .pagination li.active {
-    background-color: #ff5722;
-    color: white;
-    font-weight: 600;
+  background-color: #ff5722;
+  color: white;
+  font-weight: 600;
 }
 
 .go-top {
-	position: fixed;
-	bottom: 0;
-	right: 0;
-	text-decoration: none;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  text-decoration: none;
 
-	color: red;
-	background-color: blue;
+  color: red;
+  background-color: blue;
 
-	color: white;
-	background-color: #ff5722;
+  color: white;
+  background-color: #ff5722;
 
-	font-size: 12px;
-	padding: 1em;
-	display: none;
+  font-size: 12px;
+  padding: 1em;
+  display: none;
 }
 
 .go-top:hover {
-	background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.6);
 
 }
 
-
-
-
-
-    color: #ff5722;
+color: #ff5722;
 }
 
 h5 {
-    font-size: 32px;
+  font-size: 32px;
 }
 
 .p200 {
-    font-size: 2rem;
-    font-weight: 200;
-    line-height: 110%;
-    margin: 1.46rem 0 1.168rem 0;
+  font-size: 2rem;
+  font-weight: 200;
+  line-height: 110%;
+  margin: 1.46rem 0 1.168rem 0;
 }
 
 .page-footer .footer-copyright {
-    color: rgba(255, 255, 255, 1);
-    background-color: rgba(51, 51, 51, 1);
-    font-weight: bold;
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(51, 51, 51, 1);
+  font-weight: bold;
+}
+
+#map {
+  height: 20em;
+  width: 40em;
+  border-radius: 70px 70px 70px 70px  ;
+  /*margin: auto;*/
+  margin-bottom: 50px;
 }
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 568px) {
-    #index-banner{
-            min-height: 470px;
-    }
-    
-    #search{
-        padding-top: 5px;
-    }
-    
-    .hop{
-            height: 52vh;
-    }
-    
-    .hap{
-            height: 72vh;
-    }
-    
-    h1 {
+  #index-banner{
+    min-height: 470px;
+  }
+
+  #search{
+    padding-top: 5px;
+  }
+
+  .hop{
+    height: 52vh;
+  }
+
+  .hap{
+    height: 65vh;
+  }
+
+  h1 {
     font-size: 3.2rem;
-        }
-    
-    
+  }
+  #map {
+    height: 20em;
+    width: 22em;
+  }
+
 }
 
 @media only screen and (max-width : 600px) {
@@ -186,25 +186,30 @@ h5 {
     top: 0;
   }
 
-    #index-banner{
-        min-height: 400px;
-    }
-    
-    #search{
-        padding-top: 5px;
-    }
+  #index-banner{
+    min-height: 400px;
+  }
 
-     .hop{
-            height: 52vh;
-    }
-    
-    .hap{
-            height: 72vh;
-    }
-    
-    h1 {
+  #search{
+    padding-top: 5px;
+  }
+
+  .hop{
+    height: 52vh;
+  }
+
+  .hap{
+    height: 65vh;
+  }
+
+  h1 {
     font-size: 3.2rem;
-        }
+  }
+
+  #map {
+    height: 20em;
+    width: 22em;
+  }
 }
 
 @media only screen and (max-width : 992px) {
@@ -216,132 +221,120 @@ h5 {
     top: 10%;
   }
 
-    #index-banner{
-        min-height: 400px;
-    }
-    #search{
-        padding-top: 5px;
-    }
-<<<<<<< HEAD
-    .hop{
-            height: 63vh;
-    }
-    
-    .hap{
-            height: 72vh;
-    }
-    
-    #index-banner {
+  #index-banner{
+    min-height: 400px;
+  }
+  #search{
+    padding-top: 5px;
+  }
+
+  .hop{
+    height: 63vh;
+  }
+
+  .hap{
+    height: 65vh;
+  }
+
+  #index-banner {
     min-height: 500px;
+  }
+
+  h1 {
+    font-size: 3.2rem;
+  }
+
+  #map {
+    height: 20em;
+    width: 22em;
+  }
+}
+
+/* ipad Mini Portrait */
+/* Portrait */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 1){
+    
+  .hap{
+    height: 38vh;
+  }
+    
+  .hop{
+    height: 45vh;
+  }
+    
+#map {
+    height: 27em;
+    width: 28em;
     }
     
-    h1 {
-    font-size: 3.2rem;
+  }
+
+/* ipad Mini Landscape */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: landscape) 
+  and (-webkit-min-device-pixel-ratio: 1){
+  
+  
+  .hap{
+    height: 45vh;
+  }
+    
+  .hop{
+    height: 55vh;
+  }
+}
+
+/*iphone 6 plus*/
+@media only screen and (min-device-width : 414px) and (max-device-width : 736px) and (orientation : portrait) {
+  
+  .hap {
+    height: 45vh;
+}
+}
+
+  @media only screen and (min-device-width : 414px) and (max-device-width : 736px) and (orientation : landscape){
+    
+    
+    .hap {
+      height: 95vh;
+  }
+    
+    .hop {
+      height: 112vh;
+  }
+    
+/*    Iphone4 paysage et portrait*/
+    @media only screen 
+      and (min-device-width : 320px) 
+      and (max-device-width : 480px) 
+      and (orientation : landscape){
+        .hap {      
+      height: 96vh;
         }
-=======
-   
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#map {
-    height: 20em;
-    width: 40em;
-    border-radius: 70px 70px 70px 70px  ;
-    /*margin: auto;*/
-    margin-bottom: 50px;
->>>>>>> 5f3b6aee44900910851fb1ecc6c7c54ef5b6b79d
-}
+      }
+        
+        
+      }
+    
+    @media only screen 
+      and (min-device-width : 320px) 
+      and (max-device-width : 480px) 
+      and (orientation : portrait)
+    {
+      .hop {
+        height: 74vh;
+      }
+      
+      .hap {
+        height: 79vh;
+      }
+    }
+      
+      
+    }

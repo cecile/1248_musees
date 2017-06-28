@@ -74,7 +74,7 @@ if(!empty($motCle)){
 
         
       
-                   <div class="card horizontal col s12 m4 l4 xl4 hop">
+                   <div class="card horizontal col s12 m4 l4 xl4 hop ">
                       <div class="card-stacked hoverable">
                         <div class="card-content">
                     <h2 class="hc">
