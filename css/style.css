@@ -7,24 +7,24 @@ h1,
 
 nav ul a,
 nav .brand-logo {
-  color: #ff5722;
+    color: #ff5722;
 }
 
 .logo{
     font-family: 'arial';
     font-weight: bold;
     font-size: 3em;
-    }
+}
 
 .hop{
-        height: 37vh;
+    height: 37vh;
 }
 
 .hap{
-   height: 40vh; 
+    height: 40vh; 
 }
 p {
-  line-height: 2rem;
+    line-height: 2rem;
 }
 
 a:hover {
@@ -33,38 +33,34 @@ a:hover {
 }
 
 .button-collapse {
-  color: #26a69a;
+    color: #26a69a;
 }
 
 .parallax-container {
-  min-height: 380px;
-  line-height: 0;
-  height: auto;
-  color: rgba(255,255,255,.9);
+    min-height: 380px;
+    line-height: 0;
+    height: auto;
+    color: rgba(255,255,255,.9);
 }
-  .parallax-container .section {
+.parallax-container .section {
     width: 100%;
-  }
-
-
+}
 
 .image{
     margin-top: 14%;
     width: 69%;
 }
 
-
-
 .icon-block {
-  padding: 0 15px;
+    padding: 0 15px;
 }
-}
+
 .icon-block .material-icons {
-  font-size: inherit;
+    font-size: inherit;
 }
 
 footer.page-footer {
-  margin: 0;
+    margin: 0;
 }
 
 #search{
@@ -90,16 +86,13 @@ footer.page-footer {
 }
 
 .logo{
-        margin-top: 1%;
+    margin-top: 1%;
 }
 
 .hc{
     color: #212121;
     font-size: 1.5rem;
 }
-
-
-
 
 .lieu {
     font-size: 1.3rem;
@@ -113,32 +106,25 @@ footer.page-footer {
 }
 
 .go-top {
-	position: fixed;
-	bottom: 0;
-	right: 0;
-	text-decoration: none;
-
-	color: red;
-	background-color: blue;
-
-	color: white;
-	background-color: #ff5722;
-
-	font-size: 12px;
-	padding: 1em;
-	display: none;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    text-decoration: none;
+    color: red;
+    background-color: blue;
+    color: white;
+    background-color: #ff5722;
+    font-size: 12px;
+    padding: 1em;
+    display: none;
 }
 
 .go-top:hover {
-	background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.6);
 
 }
 
-
-
-
-
-    color: #ff5722;
+color: #ff5722;
 }
 
 h5 {
@@ -158,64 +144,80 @@ h5 {
     font-weight: bold;
 }
 
+#map {
+    height: 20em;
+    width: 40em;
+    /*margin: auto;*/
+    margin-bottom: 50px;
+}
+
 @media only screen and (min-device-width : 320px) and (max-device-width : 568px) {
     #index-banner{
-            min-height: 470px;
+        min-height: 470px;
     }
-    
+
     #search{
         padding-top: 5px;
     }
-    
+
     .hop{
-            height: 52vh;
+        height: 52vh;
     }
-    
+
     .hap{
-            height: 72vh;
+        height: 65vh;
     }
-    
+
     h1 {
-    font-size: 3.2rem;
-        }
-    
-    
+        font-size: 3.2rem;
+    }
+    #map {
+        height: 20em;
+        width: 22em;
+    }
+
 }
 
 @media only screen and (max-width : 600px) {
-  #index-banner .section {
-    top: 0;
-  }
+    #index-banner .section {
+        top: 0;
+    }
 
     #index-banner{
         min-height: 400px;
     }
-    
+
     #search{
         padding-top: 5px;
     }
 
-     .hop{
-            height: 52vh;
+    .hop{
+        height: 52vh;
     }
-    
+
     .hap{
-            height: 72vh;
+        height: 65vh;
     }
-    
+
     h1 {
-    font-size: 3.2rem;
-        }
+        font-size: 3.2rem;
+    }
+
+    #map {
+        height: 20em;
+        width: 22em;
+    }
 }
 
 @media only screen and (max-width : 992px) {
-  .parallax-container .section {
-    position: absolute;
-    top: 40%;
-  }
-  #index-banner .section {
-    top: 10%;
-  }
+    .parallax-container .section {
+        position: absolute;
+        top: 40%;
+    }
+    #index-banner .section {
+        top: 10%;
+    }
+
 
     #index-banner{
         min-height: 400px;
@@ -225,22 +227,22 @@ h5 {
     }
 
     .hop{
-            height: 63vh;
+        height: 63vh;
     }
-    
-    .hap{
-            height: 72vh;
-    }
-    
-    #index-banner {
-    min-height: 500px;
-    }
-    
-    h1 {
-    font-size: 3.2rem;
-        }
 
-   
+    .hap{
+        height: 72vh;
+    }
+
+    #index-banner {
+        min-height: 500px;
+    }
+
+    h1 {
+        font-size: 3.2rem;
+    }
+
+
 }
 
 
@@ -254,105 +256,9 @@ h5 {
     background-color: rgba(192, 192, 192, 0.5);
     padding-left: 1rem;
     width: 20%;
-    height: 30vh;
+    max-height: 30vh;
     overflow: hidden;
+    
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#map {
-    height: 20em;
-    width: 40em;
-    border-radius: 70px 70px 70px 70px  ;
-    /*margin: auto;*/
-    margin-bottom: 50px;
-
-}
